@@ -1,10 +1,19 @@
-function Card({ item }) {
-  const { category, images, description, title, price } = item;
+function Card({ item, addToCart }) {
+  const { id, category, images, description, title, price } = item;
+
+  // Skip rendering if the ID is 6
+  if (id === 6) {
+    return null;
+  }
+
+  // // Define a style for the specific image ID
+  // const imageStyle = id === 6 ? "h-64" : "h-50";
+
   return (
     <div className="p-4 md:w-1/3">
       <div className="flex flex-col h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
         <img
-          className="h-48 w-full object-cover object-center"
+          className={`w-full object-cover object-center bg-gray-400`}
           src={`${images[0]}`}
           alt="blog"
         />
@@ -18,7 +27,9 @@ function Card({ item }) {
           <p className="leading-relaxed mb-3 flex-grow">
             {description}
           </p>
-          <div className="flex items-center flex-wrap mt-auto">
+          <div 
+          onClick={addToCart}
+          className="flex items-center flex-wrap mt-auto cursor-pointer">
             <a className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
               Add To Cart
               <svg
@@ -40,8 +51,4 @@ function Card({ item }) {
     </div>
   );
 }
-
-
-
-
-export default Card
+export default Card;
