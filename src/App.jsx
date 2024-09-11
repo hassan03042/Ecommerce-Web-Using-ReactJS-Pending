@@ -1,8 +1,8 @@
 // App.js
 import { useEffect, useState } from "react";
 import { getAllProducts } from "../utils/products";
-import Card from './components/Card.jsx';
 import "./App.css";
+import Card from "./components/Card";
 
 function App() {
   const [products, setProducts] = useState([]);
