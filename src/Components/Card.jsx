@@ -8,7 +8,7 @@ function Card({
   const { id, category, images, description, title, price } = item;
 
   // Skip rendering if the ID is 6
-  if (id === 6) {
+    if (id === 6) {
     return null;
   }
 

@@ -1,9 +1,8 @@
 // App.js
 import { useEffect, useState } from "react";
-import "./App.css";
 import { getAllProducts } from "../utils/products";
 import Card from './components/Card.jsx';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import "./App.css";
 
 function App() {
   const [products, setProducts] = useState([]);
