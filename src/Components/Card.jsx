@@ -24,9 +24,9 @@ function Card({
           alt="blog"
         /> */}
         <div className="flex flex-col p-6 flex-grow">
-          <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
+          {/* <h2 className="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">
             {category.name}
-          </h2>
+          </h2> */}
           <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
             {title}
           </h1>
