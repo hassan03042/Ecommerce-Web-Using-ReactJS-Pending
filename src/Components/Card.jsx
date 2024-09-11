@@ -8,12 +8,12 @@ function Card({
   const { id, category, images, description, title, price } = item;
 
   // Skip rendering if the ID is 6
-    if (id === 6) {
-    return null;
-  }
+  //   if (id === 6) {
+  //   return null;
+  // }
 
   // // Define a style for the specific image ID
-  const imageStyle = id === 6 ? "h-64" : "h-50";
+  // const imageStyle = id === 6 ? "h-64" : "h-50";
 
   return (
     <div className="p-4 md:w-1/3">
