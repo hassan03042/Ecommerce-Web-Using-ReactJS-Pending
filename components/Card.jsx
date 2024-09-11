@@ -13,7 +13,7 @@ function Card({
   }
 
   // // Define a style for the specific image ID
-  // const imageStyle = id === 6 ? "h-64" : "h-50";
+  const imageStyle = id === 6 ? "h-64" : "h-50";
 
   return (
     <div className="p-4 md:w-1/3">
