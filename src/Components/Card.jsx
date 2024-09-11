@@ -18,7 +18,10 @@ function Card({
   return (
     <div className="p-4 md:w-1/3">
       <div className="flex flex-col h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-        <img
+        <h1 className="title-font text-lg font-medium text-gray-900 mb-3">
+          {title}
+        </h1>
+        {/* <img
           className={`w-full object-cover object-center bg-gray-300`}
           src={`${images[0]}`}
           alt="blog"
@@ -50,7 +53,7 @@ function Card({
               </div>
             )}
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
