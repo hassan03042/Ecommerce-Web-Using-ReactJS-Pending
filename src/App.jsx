@@ -1,7 +1,7 @@
 // App.js
 import { useEffect, useState } from "react";
 import { getAllProducts } from "../utils/products";
-import Card from './components/Card.jsx';
+// import Card from './components/Card.jsx';
 import "./App.css";
 
 function App() {
@@ -68,19 +68,20 @@ function App() {
               const isAddedToCart =
                 cartItems.findIndex((product) => product.id === item.id) !== -1;
               return (
-                <Card
-                  addToCart={() => addCartItems(item)}
-                  key={item.id}
-                  item={item}
-                  showRemoveFromCart={showCartItems === true}
-                  isAddedToCart={isAddedToCart}
-                  removeFromCart={() => {
-                    const allOtherItem = cartItems.filter(
-                      (product) => product.id !== item.id
-                    );
-                    setCartItems([...allOtherItem]);
-                  }}
-                />
+                <h1>sajdklsah lsakjda ldas</h1>
+                // <Card
+                //   addToCart={() => addCartItems(item)}
+                //   key={item.id}
+                //   item={item}
+                //   showRemoveFromCart={showCartItems === true}
+                //   isAddedToCart={isAddedToCart}
+                //   removeFromCart={() => {
+                //     const allOtherItem = cartItems.filter(
+                //       (product) => product.id !== item.id
+                //     );
+                //     setCartItems([...allOtherItem]);
+                //   }}
+                // />
               );
             })}
           </div>
